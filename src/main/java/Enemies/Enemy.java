@@ -25,7 +25,7 @@ public abstract class Enemy implements IDamage, IWeapon {
         this.healthPoints = healthPoints;
     }
     @Override
-    public void attack(Player player) {
+    public void attack(Player player, Enemy enemy) {
         player.healthPoints -= weapon.getDamageValue();
     }
     @Override
